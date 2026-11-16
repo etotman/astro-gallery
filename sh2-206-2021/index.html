@@ -10,7 +10,7 @@
 <meta property="og:image" content="https://etotman.github.io/astro-gallery/img/sh2-206-2021/display.jpg?v=6cc2e8da"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07080b">
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/style.css?v=279e1f84">
+<link rel="stylesheet" href="../assets/style.css?v=13394c2a">
 
 </head>
 <body>
@@ -19,9 +19,22 @@
 <div class="col">
 <figure class="hero">
   <button class="zoom" type="button" data-full="../img/sh2-206-2021/full.jpg?v=36a6f584" data-w="2300" data-h="2300" aria-label="Open full resolution">
-    <img src="../img/sh2-206-2021/display.jpg?v=6cc2e8da" width="2300" height="2300" alt="Sh2-206">
+    <img src="../img/sh2-206-2021/display.jpg?v=6cc2e8da" width="2300" height="2300" alt="Sh2-206"><span class="labels" aria-hidden="true"><span class="lbl t1 f-nebula p-r cand on farthest" style="left:47.009%;top:50.883%;--d:6.452" tabindex="-1"><i class="ring"></i><b>Sh2-206</b><em>emission nebula · 10,000 light-years away, light left 10,000 years ago</em></span><span class="lbl t3 f-nebula p-r" style="left:45.600%;top:60.113%;--d:0.000" tabindex="-1"><i class="ring"></i><b>LBN 150.69-00.90</b><em>emission nebula</em></span></span>
   </button>
-  <figcaption>Click the image for full resolution · 2300 × 2300 px</figcaption>
+  <figcaption>Click the image for full resolution · 2300 × 2300 px</figcaption><div class="lctl">
+  <button type="button" class="ltoggle" aria-pressed="false">Show what's in this picture</button>
+  <label class="lall"><input type="checkbox"> all 2 objects (+1 small)</label>
+  <span class="lcolor" role="group" aria-label="Label colour">
+    <button type="button" data-c="#ffffff" style="--c:#ffffff" aria-label="White"></button>
+    <button type="button" data-c="#d9b77a" style="--c:#d9b77a" aria-label="Gold"></button>
+    <button type="button" data-c="#ff3b2f" style="--c:#ff3b2f" aria-label="Red"></button>
+    <button type="button" data-c="#39d0ff" style="--c:#39d0ff" aria-label="Cyan"></button>
+    <button type="button" data-c="#7dff6a" style="--c:#7dff6a" aria-label="Green"></button>
+    <input type="color" value="#d9b77a" aria-label="Custom colour">
+  </span>
+  <label class="lop">opacity <input type="range" min="15" max="100" value="85"></label>
+  <p class="lfacts">Farthest: <b>Sh2-206</b> (emission nebula), 10,000 light-years away, light left 10,000 years ago. Names, types and distances: SIMBAD; positions: the image matched to Gaia DR3 stars.</p>
+</div>
 </figure>
 <main class="info">
   <div class="head">
@@ -67,7 +80,7 @@
 <div class="viewer" hidden><div class="stage"><img alt=""></div>
   <div class="vbar"><span class="vhint">Scroll or pinch to zoom · drag to pan · Esc to close</span><button type="button" class="vclose" aria-label="Close">×</button></div>
 </div>
-<script src="../assets/viewer.js?v=279e1f84" defer></script>
+<script src="../assets/viewer.js?v=13394c2a" defer></script><script src="../assets/labels.js?v=13394c2a" defer></script>
 <footer class="foot">
   <span>Night Sky · E. Totman</span>
   <span>Images © 2026 E. Totman. All rights reserved.</span>

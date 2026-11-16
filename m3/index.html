@@ -10,7 +10,7 @@
 <meta property="og:image" content="https://etotman.github.io/astro-gallery/img/m3/display.jpg?v=14a5fcc4"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07080b">
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/style.css?v=279e1f84">
+<link rel="stylesheet" href="../assets/style.css?v=13394c2a">
 
 </head>
 <body>
@@ -19,9 +19,22 @@
 <div class="col">
 <figure class="hero">
   <button class="zoom" type="button" data-full="../img/m3/full.jpg?v=ad6adbf2" data-w="1417" data-h="1416" aria-label="Open full resolution">
-    <img src="../img/m3/display.jpg?v=14a5fcc4" width="1417" height="1416" alt="M3">
+    <img src="../img/m3/display.jpg?v=14a5fcc4" width="1417" height="1416" alt="M3"><span class="labels" aria-hidden="true"><span class="lbl t1 f-cluster p-r cand on farthest" style="left:50.579%;top:50.953%" tabindex="-1"><b>M3</b><em>globular cluster · 33,900 light-years away, light left 34,000 years ago</em></span></span>
   </button>
-  <figcaption>Click the image for full resolution · 1417 × 1416 px</figcaption>
+  <figcaption>Click the image for full resolution · 1417 × 1416 px</figcaption><div class="lctl">
+  <button type="button" class="ltoggle" aria-pressed="false">Show what's in this picture</button>
+  <label class="lall"><input type="checkbox"> all 1 objects</label>
+  <span class="lcolor" role="group" aria-label="Label colour">
+    <button type="button" data-c="#ffffff" style="--c:#ffffff" aria-label="White"></button>
+    <button type="button" data-c="#d9b77a" style="--c:#d9b77a" aria-label="Gold"></button>
+    <button type="button" data-c="#ff3b2f" style="--c:#ff3b2f" aria-label="Red"></button>
+    <button type="button" data-c="#39d0ff" style="--c:#39d0ff" aria-label="Cyan"></button>
+    <button type="button" data-c="#7dff6a" style="--c:#7dff6a" aria-label="Green"></button>
+    <input type="color" value="#d9b77a" aria-label="Custom colour">
+  </span>
+  <label class="lop">opacity <input type="range" min="15" max="100" value="85"></label>
+  <p class="lfacts">Farthest: <b>M3</b> (globular cluster), 33,900 light-years away, light left 34,000 years ago. Names, types and distances: SIMBAD; positions: the image matched to Gaia DR3 stars.</p>
+</div>
 </figure>
 <main class="info">
   <div class="head">
@@ -67,7 +80,7 @@
 <div class="viewer" hidden><div class="stage"><img alt=""></div>
   <div class="vbar"><span class="vhint">Scroll or pinch to zoom · drag to pan · Esc to close</span><button type="button" class="vclose" aria-label="Close">×</button></div>
 </div>
-<script src="../assets/viewer.js?v=279e1f84" defer></script>
+<script src="../assets/viewer.js?v=13394c2a" defer></script><script src="../assets/labels.js?v=13394c2a" defer></script>
 <footer class="foot">
   <span>Night Sky · E. Totman</span>
   <span>Images © 2026 E. Totman. All rights reserved.</span>

@@ -10,7 +10,7 @@
 <meta property="og:image" content="https://etotman.github.io/astro-gallery/img/ngc4490/display.jpg?v=f447c691"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07080b">
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../assets/style.css?v=279e1f84">
+<link rel="stylesheet" href="../assets/style.css?v=13394c2a">
 
 </head>
 <body>
@@ -19,9 +19,22 @@
 <div class="col">
 <figure class="hero">
   <button class="zoom" type="button" data-full="../img/ngc4490/full.jpg?v=17938f5f" data-w="1000" data-h="1000" aria-label="Open full resolution">
-    <img src="../img/ngc4490/display.jpg?v=f447c691" width="1000" height="1000" alt="NGC 4490 &amp; NGC 4485 · Cocoon Galaxy">
+    <img src="../img/ngc4490/display.jpg?v=f447c691" width="1000" height="1000" alt="NGC 4490 &amp; NGC 4485 · Cocoon Galaxy"><span class="labels" aria-hidden="true"><span class="lbl t1 f-galaxy p-r cand on" style="left:52.800%;top:48.180%;--d:20.900" tabindex="-1"><i class="ring"></i><b>NGC 4490</b><em>galaxy in a group · 25 million light-years away</em></span><span class="lbl t2 f-galaxy p-r cand on farthest" style="left:41.390%;top:47.640%;--d:3.220" tabindex="-1"><i class="ring"></i><b>NGC 4485</b><em>galaxy in a pair · 29 million light-years away</em></span></span>
   </button>
-  <figcaption>Click the image for full resolution · 1000 × 1000 px</figcaption>
+  <figcaption>Click the image for full resolution · 1000 × 1000 px</figcaption><div class="lctl">
+  <button type="button" class="ltoggle" aria-pressed="false">Show what's in this picture</button>
+  <label class="lall"><input type="checkbox"> all 2 objects</label>
+  <span class="lcolor" role="group" aria-label="Label colour">
+    <button type="button" data-c="#ffffff" style="--c:#ffffff" aria-label="White"></button>
+    <button type="button" data-c="#d9b77a" style="--c:#d9b77a" aria-label="Gold"></button>
+    <button type="button" data-c="#ff3b2f" style="--c:#ff3b2f" aria-label="Red"></button>
+    <button type="button" data-c="#39d0ff" style="--c:#39d0ff" aria-label="Cyan"></button>
+    <button type="button" data-c="#7dff6a" style="--c:#7dff6a" aria-label="Green"></button>
+    <input type="color" value="#d9b77a" aria-label="Custom colour">
+  </span>
+  <label class="lop">opacity <input type="range" min="15" max="100" value="85"></label>
+  <p class="lfacts">Farthest: <b>NGC 4485</b> (galaxy in a pair), 29 million light-years away. Names, types and distances: SIMBAD; positions: the image matched to Gaia DR3 stars.</p>
+</div>
 </figure>
 <main class="info">
   <div class="head">
@@ -67,7 +80,7 @@
 <div class="viewer" hidden><div class="stage"><img alt=""></div>
   <div class="vbar"><span class="vhint">Scroll or pinch to zoom · drag to pan · Esc to close</span><button type="button" class="vclose" aria-label="Close">×</button></div>
 </div>
-<script src="../assets/viewer.js?v=279e1f84" defer></script>
+<script src="../assets/viewer.js?v=13394c2a" defer></script><script src="../assets/labels.js?v=13394c2a" defer></script>
 <footer class="foot">
   <span>Night Sky · E. Totman</span>
   <span>Images © 2026 E. Totman. All rights reserved.</span>
