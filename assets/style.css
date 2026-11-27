@@ -278,3 +278,27 @@ img { display: block; }
 .hero .lbl.p-t b { left: 0; top: calc(-1 * var(--rr) - 12px); transform: translate(-50%, -50%); }
 .hero .lbl.p-b b { left: 0; top: calc(var(--rr) + 12px); transform: translate(-50%, -50%); }
 .hero .lbl.p-t em, .hero .lbl.p-b em { left: 0; top: calc(var(--rr) + 22px); transform: translateX(-50%); }
+
+/* sky map: small one opens the large one */
+.skyopen { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.skyopen:hover .skymap .sky { stroke: var(--accent); }
+.skydlg { width: min(1100px, 94vw); max-height: 92vh; padding: 18px 20px 14px; border: 1px solid var(--line); border-radius: 8px;
+  background: #0d0f14; color: inherit; }
+.skydlg::backdrop { background: rgba(0, 0, 0, .72); }
+.skyhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.skyhead h3 { margin: 0; font-size: 17px; font-weight: 500; }
+.skyclose { border: 0; background: none; color: var(--faint); font-size: 26px; line-height: 1; cursor: pointer; }
+.skyclose:hover { color: #fff; }
+.skymap.big { margin: 12px 0 8px; }
+.skymap.big .lab text { font-size: 12px; }
+.skymap.big .gal { stroke-width: 12; }
+.skymap.big .ecl { stroke-width: 1.2; stroke-dasharray: 6 5; }
+.skymap.big .months text { fill: var(--faint); font: 12px var(--sans); }
+.skymap.big .mcap { fill: var(--faint); font: italic 11px var(--sans); opacity: .8; }
+.skymap.big .gc circle { fill: none; stroke: #9fb0d8; stroke-width: 1.2; }
+.skymap.big .gc text { fill: #9fb0d8; font: 12px var(--sans); }
+.skymap.big .obj { fill: #7d8aa8; stroke: #0d0f14; stroke-width: 1; cursor: pointer; transition: r .12s, fill .12s; }
+.skymap.big a:hover .obj, .skymap.big a:focus .obj { fill: var(--accent); r: 7px; }
+.skymap.big .tname { fill: #fff; font: 600 15px var(--sans); paint-order: stroke; stroke: #0a0c12; stroke-width: 4px; }
+.skynote { margin: 4px 0 0; color: var(--faint); font-size: 12.5px; line-height: 1.5; }
+.maplegend .k.obj { width: 8px; height: 8px; border-radius: 50%; background: #7d8aa8; }
